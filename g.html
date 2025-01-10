@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //problem 1
+        let a= parseInt(prompt("Enter a number"));
+        if (a%2==0 && a%3==0){
+            document.write("number is divisible by 2 and 3");
+        }else{
+            document.write("numner is not divisible by 2 and 3");
+        }
+
+         //problem 2
+         let b= parseInt(prompt("Enter a number"));
+         let c= parseInt(prompt("Enter b number"));
+         let d= parseInt(prompt("Enter a number"));
+         if(b>c && b>d){
+            document.write("largest number is {b}");
+         }else if (c>b && c>d ){
+            document.write("largest number is {c}");
+         }else{
+            document.write("lagest number {d}");
+         }
+
+         //problem 3
+        let a=parseInt(prompt("total number of working days"));
+        let b=parseInt(prompt("total number of days absent"));
+        //working days-100
+        //--25 days
+        //present days w-A/W*100
+        let p=a-b;
+        let AP=(p/a)*100;
+        if(AP>=75){
+            document.write("eligible")
+        }else{
+            document.write("not eligible");
+        }
+    </script>
+</body>
+</html>

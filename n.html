@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*function greet(){
+            console.log("goodbye!")
+        }
+        ()
+        greet("pavani",funtion(){
+            console.log("goodbye")
+        })
+        //anonymous function as function
+        //Ex:we didn't pass namee function like(goodbye);
+        //instead of that we defined an anonymus function directly with in the greet function
+        console.log('Start of program');
+        setTimeout(() => {
+            console.log('This runs after 2 seconds');
+        }, 2000);
+        console.log('End of program');*/
+function fetchData(callback){
+console.log("Fetching data...")
+setTimeout(function(){
+console.log("data fetched");
+callback();
+},2000);
+}
+function processData(){
+console.log("processing the fetched data...")
+}
+fetchData(processData);
+
+const number=[1,2,3,4,5]
+const d=number.map(function(num){
+return num*2
+})
+console.log(d)
+        
+    </script>
+</body>
+</html>

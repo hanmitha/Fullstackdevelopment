@@ -1,0 +1,981 @@
+loops:
+conditional Statements:
+--block of code
+1-10 numbers
+loops:block of code several times
+for loop
+for in
+for of
+while
+do while
+1)for loop:
+for(initialisation;codition,update expression)
+
+loop starts
+1-5
+# i<5 or i<=5
+for(let i=1; i<=5;i++){
+console.log(i)
+}
+
+Inti:i:1,2,3,4,5
+cond:1<=5T,2<=5,3<=5,4<=5;5<=5,6<=5f
+up:i++=i=i+1#1+1=2;2+1=3;4,5,6
+block of code#1;2;3;4;5
+
+
+for(let i=0;i<7;i=i+2)
+console.log(i+2)
+
+10-15
+for(let i=10;i<=15;i++){
+console.log(i)
+}
+
+adding all the elements in the array
+const numbers=[1,2,3,4,5]
+let sum = 0
+for(let i=0;i<numbers.length;i++){
+//o<5;1<5;2<5;3<5;4<5;5<5(f)
+sum=sum+numbers[i]
+#0+1=1
+1+2=3
+3+3=6
+6+4=10
+10+5=15
+----------------------------------------------------------------------------------------------------
+21-1-25
+----------------------------------------------------------------
+while
+do while
+(this is the way to execute the all string in the vscode (or) to iterate all charater in the string)
+for in loop
+const a="hanmitha"
+for (let i in a){
+console.log(a[i]);
+}
+
+Arrays:
+------
+for of
+const a=["ravi","sam","kavya"]
+for(let e of a){
+console.log(e)
+
+while loop:
+--for loop
+--infinite(unknown)
+syntax:
+while(condition){
+blockcode
+}
+1)condition inside the()
+2){}
+3)false
+
+
+let i=2,n=8;
+//while loop 1-5
+while(i<=n){//1<=5
+console.log(i)
+i=i+2
+}
+
+dowhile:
+syntax:
+do{
+//block of code
+}while(condition}
+---------
+Example:
+---------
+let c=0;
+do{
+console.log("count is:"+c);
+c++
+}while(c<5)
+
+Break and continue:
+-------------------
+Break:
+--------
+matches it will stop
+Example:
+for(let i=1;i<=5;i=i+1){
+if(i==8){                                                      
+break;
+}console.log(i)
+}
+
+contiune:
+---------
+for(let i=1;i<=8;i=i+1){
+if(i==5){//condition statement is skip and remaining
+continue;
+}console.log(i)
+}
+
+22-1-25
+----------------------------------------------------------------
+contiune
+----------
+for(let i=1;i<=8;i=i+2)
+if(i>5){
+contiune
+}console.log(i)
+}
+
+Nested Loop:
+--------------
+A loop inside the another loop
+the loop will excute one time for each iterator of outer loop
+An inner loop with in the repeated block of outer loop
+
+for(let i=1;i<=3,i++){
+doucument.write(i,"<br>")
+for(let j=1;j<=4;j++){
+doucument.write(j,"<br>")
+}document.write("<br>")}
+------------------------------------------------------------------
+23-1-25
+--------------------------------------------------------
+functions
+----------
+A fumction is reuseable block of code
+It can be call any where in the program
+--recusable code:using an existing code with out writing it ever we need
+you can use the same code with different arguments to get the results
+
+java script
+-----------
+key words = function
+()
+paramenters = values which are declare in side the ()while creating a function
+which defining a function
+arguments:values which are passed throught the parameters
+//functions
+        function greet(){
+            console.log("Hello hanmitha")
+        }
+       // call the funtion
+       //once you declare the function no need write the muiltiple times the code
+       greet()
+       console.log("hi hanmitha")
+       greet()
+
+
+syntax errors
+time-mangement
+
+example:function with paramenters
+function g(name){
+        console.log("hello "+name+)
+       }
+       let name=prompt("Enter your name?")
+       g(name)
+
+Add two number by using function
+function Add(a,b){
+        console.log(a+b)
+       }
+       Add(3,5)
+
+Function return
+----------------
+--the return statemnt can be used to return the values to function call
+function call:
+Example
+function a(aa,bb)
+{
+
+return aa+bb;
+}
+let n1=parseFloat(prompt("enter a number1")
+let n2=parseFloat(prompt("enter a number2")
+let result=a(n1,n2);
+console.log("the sum is:"+result)
+
+anonymous function:
+--------------------
+a function with out any name,after we create a function with out name and we assign it to a variable
+Example:
+sum=function(n1,n2){
+let r=n1+n2
+return r
+}
+console.log(sum(8,9))
+-----------------------------------------------------
+24-1-25
+-------------------------------------------------------
+function
+--------
+arrow Function:
+---------------
+--Es6 version
+--more readable and more structure
+--annoymous function(lambda functions)
+--without function name but they are assigned to a variable
+
+Arrow functions without parameters
+-----------------------------------
+let c=()=>{
+console.log("hi hanmitha")
+
+Arrow function with parameters
+--------------------------------
+example:
+--------
+let X=(X,Y)=>{
+console.log(X+Y)
+}
+x(20,30)
+x(40,50)
+Example:
+--------
+arrow Function with one argument
+---------------------------------
+let greet=x=>console.log(x);
+greet('hello')
+
+arrow Function with out argument
+---------------------------------
+let greet=()=>console.log("hello")
+greet()
+
+Example:Arrow function as an expression
+let 18;
+let welocome=(age<=18)?
+()=>console.log('gowtham');
+()=>console.log('sai charan');
+
+synchronous and asynchronous function :
+---------------------------------------------
+Synchronous:
+------------------
+example:
+function task1(){
+console.log("Task1 : start")
+}
+function task2(){
+console.log("Task2 : start")
+}
+function task3(){
+console.log("Task3 : start")
+}
+task1()
+task2()
+task3()
+
+asynchronous function:
+-----------------------
+muliple tasks at a time
+console.log("hi hanmitha")
+        setTimeout(()=>{
+            console.log("hi harshitha")
+
+        },50000);
+        console.log("I am yamini")
+
+
+javaScript callback functions:
+---------------------------------
+
+#functions
+#oops
+#file handling
+#multiplethreading
+
+
+javascript callback:
+a callback function is a function that passed arguments to another function;
+ function greet(name,callback){
+console.log(`hello,${name}!`)
+}
+function saygoodbye(){
+console.log("goodgye")
+}
+
+//call greet and pass saygoodbye asthe callback
+greet("sam",saygoodbye)
+
+promise:
+three states
+1)pending :--still not completed--continuing
+2)fullfilled ==task completed
+3)rejected==the operator is filled
+
+example:
+
+let mypromise =new promise((reslove,reject)=>
+{let sucees = true;
+if(sucees){
+reslove("task completed");
+};else{
+reject("task failed")
+}
+}
+
+-------------------------------------------------------------------------------
+25-1-25
+-------------------------------------------------------------------------------
+call back functions:
+--------------------
+--you can pass the callback function as an arguments to another function
+
+Excution : the receving the call back at some point during execution(often at the end or after an asynchronous operation is done
+
+Example:
+function mainfunction(callback){
+
+console.log("Excute main function");
+callback()
+//here we call the callback function
+}
+function callbackfunction(){
+console.log("callback function excuted")
+}
+mainfunction(callbackFunction);
+
+example:
+mainfunction takes a parameter callback
+callbackfunction is passed to aruguments to mainfunction
+inside the main function,the call back function
+
+--output
+mainfunction(callbackfunction):
+It will excute the code inside the mainfunction-
+it will print("excute main function");
+then it reaches to callback();where it call the function the which is passed the mainfunction(callback function)
+
+Example:2
+passed a named function as a callback;
+function greet(name,callback){
+console.log("hello"+name);
+callback();
+//execute the callback function after greeting
+}
+function goodbye(){
+console.log("goodbye")
+}
+greet("hanmitha",goodbye)
+//ūśing anonymous function as a callback
+
+ greet("pavani",funtion(){
+            console.log("goodbye")
+        })
+
+//anonymous function as function
+//Ex:we didn't pass namee function like(goodbye);
+//instead of that we defined an anonymus function directly with in the greet function
+
+asychromous callback with settimeout in javascript
+-----------------------------------------------------
+function fetchData(callback){
+console.log("Fetching data...")
+setTimeout(function(){
+console.log("data fetched");
+callback();
+},2000);
+}
+function processData(){
+console.log("processing the fetched data...")
+}
+fetchData(processData);
+Example 5
+-------------
+using a callback with array methods(map)
+const number=[1,2,3,4,5]
+const d=number.map(function(num){
+return num*2
+})
+console.log(d)
+
+example:
+map() is a built in array method that callback function to process each item in array 
+the callback here doubleseach number(num*2) add will result new array with 
+ example:
+function registration scenario based:
+Ex:
+function registeruser(username,email,callback){
+console.log("registering user"+username);
+setTimeout(){
+console.log("user"+username+"registered sucessfully");
+callback(email);
+}2000,);
+}
+function sendWelcomeEmail(email){
+console.log("sending welcome email to"+email);
+
+27-1-25
+----------------
+React js
+----------------
+--A promise a special javaScript object that represent the eventual completion (or failure) of an asynchronous operation
+--It allows to handle asynchrous tasks more effectively than callbacks
+
+Three States:
+-------------
+1)pending:the inital state,the promise is still waiting for the operation to finish
+2)filfilled:the operation completed succesfully
+3)rejected:the operation failed;
+
+Example:
+to create a promise-new promise()
+two parameter-
+resolve--to make the promise as successfully
+reject:-make it as failed
+
+2)handling the result:
+,then () method is called when promise is fulfilled,
+It will recevied the result from resolve .catch () methos is call if the promise is reject it recevie the error from reject
+
+Example:
+Let mypromise=new Promise(resolve,reject)=>{
+let success=true;
+if(success){
+
+resolve("the operation is successfull);
+}else{
+reject("the operation failed")
+}
+});
+
+Chaining promise:
+Ex:
+let promise = new promise((resolve,reject)=>{
+        resolve(5);
+        })
+
+        promise
+        .then(result=>{
+        console.log(result);
+        return result+2
+
+        })
+        .then(result=>{
+        console.log(result);
+        return result*2
+
+        })
+        .then(result=>{
+        console.log(result);
+        })
+        .catch(error=>{
+        
+        console.log("error",error)
+        })
+output:
+5
+10
+13
+
+Ex:promise with setTimeOut
+--asynchronous task using stTimeOut,and the promise will resolve after a certain amount of time
+let fetchData =new Promise((resolve,reject)=>{
+let dataFetch=true;
+setTimeOut(()=>{
+if(dataFetch){
+resolve("data fetch successfully")
+}else{
+rejected("data fetch successfully")
+},2000)
+})
+fetchData
+.then(result
+
+
+DOM(document object model)
+--It is used in web development used to interact and manipulate(change) the html documens
+when web page is loaded the browser create DOM of the wed page
+when html file is loaded into the brower the javascript cannot understand the html document diectly
+
+DOM:
+it is baically the representation of the same html document but ina tree like structrue composed of object
+keypoints:
+1)structure:
+the DOM represent the structure of html document as a tree eachnode in the tree represent the elements,an attribute or text
+2)manipulate:
+using javascript you can interaction with elements (buttons,paragraphs on the webpages,changing  the content ,style can add or remove elements
+3)event handling: you can handle the interaction like click or pressing the button
+4)W3C: world wide web consortium
+
+<HTML>
+
+<head>
+<title>Mallareddyuniversity</title>
+</head>
+<body>
+<h1>i am in hyd</h1>
+</body>
+
+</HTML>
+
+methods of Document Objects:
+--used to interact with and manipulate the document Getting Element:
+Getting Element:
+1)Getting an element by id:
+2)Getting an element by class:
+3)Getting an Element by tag:
+4)Getting an element by qery selector:
+--------------------------------------
+29-1-25
+-----------------------------------
+
+get ElementById:
+return the element having the given id values
+<h1 id="a" >I am hanmitha</h1>
+    <h1 id="b" >I am harshitha</h1>
+    <h1 id="c" >I am vidya</h1>
+
+getElementByClassName():
+return all the elements having the same calss name
+getElementByClassName():
+return an html calllection object
+An html collection is an array like list of html elements.
+the length
+<h1 id="a" class="a">I am hanmitha</h1>
+    <h1 id="b" class="b">I am harshitha</h1>
+    <h1 id="c" class="a">I am vidya</h1>
+    <script>
+        //let x=document.getElementById('a')
+        //console.log(x)
+        let x=document.getElementByClassName('a')
+        console.log(x)
+    </script>
+
+Getting the elements by tag name:
+getelementsbyTagName():
+--this meyhod takes a tag name as string and return an html collection object
+--each element loops
+
+ <h1 id="a" class="a">I am hanmitha</h1>
+    <h2 id="b" class="b">I am harshitha</h1>
+    <h3 id="c" class="a">I am vidya</h1>
+    <script>
+        //let x=document.getElementById('a')
+        //console.log(x)
+        let x=document.getElementByClassName('h1')
+        console.log(x)
+    </script>
+
+<h1 id="a" class="a">I am hanmitha</h1>
+    <h2 id="b" class="b">I am harshitha</h1>
+    <h3 id="c" class="a">I am vidya</h1>
+    <script>
+        //let x=document.getElementById('a')
+        //console.log(x)
+        let x=document.getElementByClassName('h1')
+        console.log(x)
+        for(let i=0;i<x.length;i++){
+            console.log(x[i]) //i;i<2;i++       
+        }
+    </script>
+
+Getting elements by using querySelection method
+the document query selection method select an hour element by tagname,by id, classname
+queryselector:can be used to selct Html element by its tagname,by id,class name; 
+
+Query selctorAll:
+--it selcts all the html elements by name and tagname
+
+Manipulating Elements:
+to craete a html elements:
+createElement()-create a new element()
+
+Text content:
+
+--------------------------------
+single element:
+--------------------------------
+to create multiple elements:
+<h1 id="a" class="a">I am hanmitha</h1>
+    <h2 id="b" class="b">I am harshitha</h1>
+    <h3 id="c" class="a">I am vidya</h1>
+    <script>
+        /*//let x=document.getElementById('a')
+        //console.log(x)
+        let x=document.querySelector('h1')
+        console.log(x)
+        //let x=document.getElementByClassName('h1')
+        //console.log(x)
+        for(let i=0;i<x.length;i++){
+            console.log(x[i]) //i;i<2;i++       
+        }*/
+       let t=document.createElement('h2')
+       t.className="tt"
+       console.log(t)
+       document.body.appendchild(t);
+    </script>
+----------------------------------
+to create multiple elements:
+---------------------------------
+<h1 id="a" class="a">I am hanmitha</h1>
+    <h2 id="b" class="b">I am harshitha</h1>
+    <h3 id="c" class="a">I am vidya</h1>
+    <script>
+        /*//let x=document.getElementById('a')
+        //console.log(x)
+        let x=document.querySelector('h1')
+        console.log(x)
+        //let x=document.getElementByClassName('h1')
+        //console.log(x)
+        for(let i=0;i<x.length;i++){
+            console.log(x[i]) //i;i<2;i++       
+        }*/
+       /*let t=document.createElement('h2')
+       t.className="tt"
+       console.log(t)
+       document.body.appendchild(t);*/
+       const t=['harshini','pavani','rohini']
+       let(i=0,i<t.length,i++){
+           tt.document.createElement("h1")
+           tt.textContent=t[i]
+           console.log(t[i])
+           console.log(tt)
+
+DOM:
+--get element by id,class,tag
+--queryselector methods
+--to create a element by using js:
+1)single element
+2)multiple element
+example:
+let title
+for(let i=0;i<3;i++){
+title=document.createElement('h2')
+title.c;assName="tt"
+console.log(title)
+}
+
+const titles=["sainath","saicharan","rahul"]
+for(let i=0;i<titles.length;i++){
+    let title=document.createElement('h1');
+    title.className="a"
+    title.textContent=titles[i]
+    console.log(title)
+}
+
+Removing a child element from a parent node:
+<h1>Removing child node</h1>
+<h2>i am hanmitha</h2>
+<ul>
+    <li>harshitha</li>
+    <li>srividya</li>
+    <li>hema</li>
+    </ul>
+
+    <script>
+        const ul=document.qureySelector('ul')
+        const lists=document.querySelectionAll('li')
+        for(const list of lists){
+            console.log(`Removing:${list.textcontent}`)
+            ul.removeChild(list)
+        }
+
+To append a new elements:
+append()-To append a new element to parent node
+<div id="a">
+        <h1>harshitha</h1>
+        <h1>hanmitha</h1>
+    </div>
+    <div id="b">
+        <h1>srividya</h1>
+        <h1>yamini</h1>
+    </div>
+
+let n=document.createElement("h2")
+n.textContent='radhika is the team lead'
+//get the parent element
+let p=document.getElementById("b")
+console.log(p.innerText) //Srividya,yamini
+//append the new element to the parent node
+p.appendChild(n)
+//log the inner text element to the parent node
+console.log(p)
+console.log(p.innerText)
+
+31-1-25
+1)How to create a new element
+2)append a element inside a the parent code
+add the element at the end
+3)InsertBefore():insert a new node before an exsiting node or child nodeof a specfiic parent node
+--this requried a refrenece to both the new node and the existing node you want to insert before
+where ever you want we can add
+InsertBefore()
+<body>
+    <div id="a">
+<h1>
+        <h1>Ravi</h1>
+        <h1 id="r">Ram</h1>
+    </div>
+    <div id="b">
+        <h2>Sam</h2>
+        <h2>venkat</h2>
+    </div>
+    <script>
+        let n=document.createElement("h2")
+        n.textContent="Rahul"
+        let p=document.getElementById('a')
+        let l=document.getElementById('r')
+        p.insertBefore(n,l)
+        console.log(p)
+    </script>
+</body>
+</html>
+
+ <script>
+        //to insert Rahul before ram
+        let n=document.createElement("h2") 
+        n.textContent="Rahul"
+        let p=document.getElementById('a')
+        let l=document.getElementById('r')
+        p.insertBefore(n,l)
+        console.log(p)
+        //to insert hanmitha before ravi
+        let nn=document.createElement("h1")
+        nn.textContent="hanmitha"
+        let pp=document.getElementById('a')
+        let ll=document.getElementById('rr')
+        pp.insertBefore(nn,ll)
+        consoale.log(pp)
+    </script>
+
+To remove an element:
+let b=document.getElementById("b")
+b.remove()
+
+To remove an chile Element:
+removechild
+-----------------------------------------------------------------
+1-2-25
+------------------------------------------------------------------
+1)Variables
+2)javaScript
+3)React js
+4)project-F.E
+4)springboot
+5)MySql
+------------------------------------------------------------------------
+4-2-25
+-----------------------------------------------------------------------
+React js
+--create a element:
+document.createElement('h1')
+<h1>hanmitha</h1>
+document.createElement('h1');
+a.inner.html="I am hanmitha"
+document.body.appendChild(a)
+console.log(a)
+
+to create element in react js:
+--React.craeteElement('h1')
+syntax:
+React.createElement(type,prop)
+-type=tag name(div,h1,p)
+props = className,id,onclick
+--to display the element we use 
+reactDOM.craeteRoot()
+--ReactDOM.render()
+--to display the element
+syntax:
+Reactelement-what to render
+container=where to render
+
+Intro to JSX:
+(javaScript XML) is a syntax extension for js in react js;it allows us to write html code in react
+--it makes us easier to write html in react
+JSX:jSX code gets complied into JS
+# Babel:a tool converts the html to js
+keypoints;
+<br/>:to break the lines
+<img/>
+class=classname
+expressions in JSX:
+with jsx,ypu can write the expre4ssions inside the{}
+this allows us to embed 
+
+using a function call:
+you can call the function call dfirctlyith in the jsx epression
+--------------------------------------------------
+Reactjs
+--------------------------------------------------
+--create a element:React.createElement()
+syntax
+React.createElement()
+type=tagname;(h,p,div)
+props=className,id
+
+--ReactDOM.createRoot();
+--render
+
+JSX:
+java script XML is a synatx extension for js:
+It allows us to write Html code in React
+the JSX code gets complied into JS
+babel:A tool converts HTML code in js
+#react
+--all the html tags must be closed
+1)create a element with JSX
+
+<div id="app"></div>
+    <script type="text/babel">
+        const element=<h1 className='a'>Hello,JSX!</h1>
+        const e=document.getElementById('app')
+        const root=ReactDOM.createRoot(e)
+        root.render(element)
+
+2)without JSX:
+<div id="app">
+        <script>
+            'h1',{id:'a'},"I am hanmitha"
+            const e=React.createElement(
+
+            )
+            const element=document.getElementById('app')
+            const root=recatDOM.createRoot(element)
+            root.render(e)
+        </script>
+
+    </div>
+
+Expressions:
+<div id="app">
+        <script type="text/babel">
+            const n=10;
+            const m=<h1>React is{m*2}better than react</h1>
+            const root=ReactDOM.createRoot(document.getElementbyId('app'))
+            root.render(m)
+        </script>
+conditional rendering in JSX:
+-------------------------------------
+
+6-2-25
+public/index.html:
+the main html file that servers as the entry point for the app
+scr/index.js:the javascript entry point for the react app
+DOM is rendered
+scr/app.js:it is a main components that servers as the root the componenets tree
+scr/components:A floder to store resuable components
+1)components:(core building blocks of a react applica
+App.js
+tion)
+the main
+the help to create resuable block of code
+--if anything goes wrong in UI,it is very easy findout and solve that
+
+1)class components:
+2)functional componnets
+App.js
+----
+import React from 'react';
+import './App.css';
+import Welcome from './welcome'
+//const welcome=()=><h1 classNmae='Message'>Hello hanmitha
+<div styl={{textAlign:'center',color:red}}
+<Welcome name="Rahul" greeting="Hello/>
+<Welcome name="sai" greeting="hi"</h1>
+fumction APP(){
+return(
+<div className='App'><welcome/></div>
+)
+}
+export default App;
+
+App.css
+------
+.message{
+color: blue;
+background-color:;
+font-size: 40px
+text-aglin:center;
+
+ index.js
+import App from './App';
+import reportWebvirtal
+
+components are resuable
+Welcome.js
+import react from 'react'
+const Welcome=(props)=>{
+const{name,greeting}=props;
+return(
+<h1 className='message'>{greeting},{name}</h1>
+)}
+export default App;
+--------------------------------------------------------
+7-2-25
+--------------------------------------------------------
+
+Components:
+conditional Rendering:
+if,else:
+
+App.js
+-------
+import React from 'react';
+import Greeting from'./Greeting';
+function App(){
+const isLoggedin=ture;
+return(
+<div className='App'><Greeting isLoggedIn={isLoggedIn}/></div>
+)
+}
+export default  App;
+
+Greeting.js new file
+------------------------
+import React from 'react';
+function Greeting({isLoggedIn}){
+if(isLoggedIn){
+return <h1>welcome back!</h1>
+}else{
+return <h1>please log in </h1>
+}
+}export default Greeting;
+
+
+web vitral error--npm install web-vitral
+
+list and keys:
+------------------
+In react a list is a collection of items you want to show on screen
+--key:keys in reaact helps us to keep the track of items in a list
+--React know which items you have changed ; updated
+map():elements in array function will be applied to all element
+
+const n=[1,2,3,4,5]
+const d=n.map(num=>num*2)
+console.log(d)
+#2,4,6,8,10
+#map()in react in list
+
+const FruitsList=()=>{
+const fruits=['apple','banana','orange']
+rerurn(
+<div.
+<h1>Fruits List</h1>
+<ul>
+{fruits.map((fruits.map((fruits,index)=>(
+<li key={index}>{fruits}</li>
+))}
+</ul>
+</div>
+)}
+export default FruitsList;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+

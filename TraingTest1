@@ -1,0 +1,18 @@
+
+mysql> select * from studentInfo;
+ERROR 1046 (3D000): No database selected
+mysql> use student
+Database changed
+mysql> select * from studentInfo;
++------+-----------+--------------+-----------------------------------------+--------+
+| id   | name      | Roll_number  | Email                                   | branch |
++------+-----------+--------------+-----------------------------------------+--------+
+|    1 | hanmitha  | 2211cs010105 | 2211cs010105@mallareddyuniversity.ac.in | CSE    |
+|    2 | harshitha | 2211cs010106 | 2211cs010106@mallareddyuniversity.ac.in | CSE    |
+|    3 | srividya  | 2211cs010168 | 2211cs010168@mallareddyuniversity.ac.in | CSE    |
+|    4 | priya     | 2211cs010111 | 2211cs010111@mallareddyuniversity.ac.in | CSE    |
+|    5 | hema      | 2211cs010153 | 2211cs010153@mallareddyuniversity.ac.in | CSE    |
+|    6 | yamini    | 2211cs010158 | 2211cs010158@mallareddyuniversity.ac.in | CSE    |
+|    7 | abhi      | 2211cs010100 | 2211cs010100@mallareddyuniversity.ac.in | CSE    |
++------+-----------+--------------+-----------------------------------------+--------+
+7 rows in set (0.01 sec)
